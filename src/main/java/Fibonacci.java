@@ -1,6 +1,10 @@
 public class Fibonacci {
 
     public static int[] generate(int length) {
-        return new int[]{0, 1};
+        final int[] sequence = new int[length];
+        for (int i = 0; i < sequence.length; i++) {
+            sequence[i] = i;
+        }
+        return sequence;
     }
 }
