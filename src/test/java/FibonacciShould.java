@@ -26,8 +26,13 @@ public class FibonacciShould {
     }
 
    @Test
-    public void generate_two_for_fifth_number() {
+    public void generate_three_for_fifth_number() {
         assertThat(generateAtIndex(4), is(3));
+    }
+
+   @Test
+    public void generate_five_for_sixth_number() {
+        assertThat(generateAtIndex(5), is(5));
     }
 
     private int generateAtIndex(int index) {
