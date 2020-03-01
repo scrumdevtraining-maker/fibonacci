@@ -25,6 +25,11 @@ public class FibonacciShould {
         assertThat(generateAtIndex(3), is(2));
     }
 
+   @Test
+    public void generate_two_for_fifth_number() {
+        assertThat(generateAtIndex(4), is(3));
+    }
+
     private int generateAtIndex(int index) {
         return Fibonacci.generate(index + 1)[index];
     }
