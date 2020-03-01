@@ -11,10 +11,14 @@ public class FibonacciShould {
         assertThat(generateAtIndex(0), is(0));
     }
 
-
     @Test
     public void generate_one_for_second_number() {
         assertThat(generateAtIndex(1), is(1));
+    }
+
+    @Test
+    public void generate_one_for_third_number() {
+        assertThat(generateAtIndex(2), is(1));
     }
 
     private int generateAtIndex(int index) {
