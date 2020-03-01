@@ -1,7 +1,7 @@
 public class Fibonacci {
 
-    public static int[] generate(int length) {
-        final int[] sequence = new int[length];
+    public static long[] generate(int length) {
+        final long[] sequence = new long[length];
         for (int i = 0; i < sequence.length; i++) {
             if (i < 2) {
                 sequence[i] = i;
