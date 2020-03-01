@@ -20,6 +20,11 @@ public class FibonacciShould {
         assertThat(generateAtIndex(2), is(1));
     }
 
+   @Test
+    public void generate_two_for_fourth_number() {
+        assertThat(generateAtIndex(3), is(2));
+    }
+
     private int generateAtIndex(int index) {
         return Fibonacci.generate(index + 1)[index];
     }
