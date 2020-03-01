@@ -35,6 +35,11 @@ public class FibonacciShould {
         assertThat(generateAtIndex(5), is(5));
     }
 
+   @Test
+    public void generate_large_number_for_fiftieth_number() {
+        assertThat(generateAtIndex(50), is(7778742049L));
+    }
+
     private int generateAtIndex(int index) {
         return Fibonacci.generate(index + 1)[index];
     }
