@@ -6,7 +6,7 @@ public class Fibonacci {
             if (i < 2) {
                 sequence[i] = i;
             } else {
-                sequence[i] = i - 1;
+                sequence[i] = sequence[i - 1] + sequence[i - 2];
             }
         }
         return sequence;
